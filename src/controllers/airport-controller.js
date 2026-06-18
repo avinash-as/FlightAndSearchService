@@ -6,7 +6,7 @@ const create = async (req, res) => {
     try {
         const response = await airportService.create(req.body);
         return res.status(201).json({
-            message: 'Successfully created the airport',
+            message: 'Successfully created the Airport',
             err: {},
             data: response,
             success: true
@@ -17,7 +17,7 @@ const create = async (req, res) => {
             data: {},
             success: false,
             err: error,
-            message: 'Cannot create a new airport'
+            message: 'Cannot create a Airport'
         })
     }
 }
